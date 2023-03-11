@@ -31,5 +31,16 @@
         "load_on_low_memory": true
       }
     ]
-  }
+  },
+  "ramen":{
+    "max_distance": 5.0,
+    "sounds":[
+      {
+    "name":"sounds/ramen",
+    "stream": true,
+    "volume":0.1,
+    "load_on_low_memory":true
+    }
+   ]
+  } 
 }

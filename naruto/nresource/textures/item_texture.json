@@ -6,6 +6,9 @@
         },
         "amour_test":{
             "textures":"textures/items/test"
+        },
+        "ramen":{
+            "textures":"textures/items/ramen"
         }
     }
 }
