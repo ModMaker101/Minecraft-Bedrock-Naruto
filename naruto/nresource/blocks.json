@@ -1,0 +1,12 @@
+{
+    "format_version": "1.19.10",
+      "chase:grass": {
+        "textures": {
+            "up": "grass_carried",
+            "side": "grass_carried",
+            "down": "dirt_bottem"
+
+            },
+        "sound":"grass"
+        }
+    }

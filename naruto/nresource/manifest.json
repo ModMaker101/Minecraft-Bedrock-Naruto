@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Example vanilla behavior pack",
+        "name": "naruto pack [alpha]",
+        "uuid": "191b90b1-5614-41aa-bc62-20515f827f58",
+        "version": [ 1 , 0, 0],
+        "min_engine_version": [ 1, 19, 10 ]
+    },
+    "modules": [
+        {
+            "description": "Example vanilla behavior pack",
+            "type": "resources",
+            "uuid": "c3b79aef-aafb-4a0b-8d4a-1217970c84fc",
+            "version": [1 , 0, 0]
+        }
+    ]
+}

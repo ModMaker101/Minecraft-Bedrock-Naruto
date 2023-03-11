@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fire_ball_jutsu": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": {
+					"effect": "fire_trail"
+				}
+			},
+			"bones": {
+				"body": {
+				  "rotation": [ "query.camera_rotation(0)", "query.camera_rotation(1)", 0.0 ]
+				}
+			  }
+		}
+	}
+}

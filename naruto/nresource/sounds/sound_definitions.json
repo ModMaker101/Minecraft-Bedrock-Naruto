@@ -1,0 +1,35 @@
+{
+  "jutsu": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/jutsu",
+        "stream": true,
+        "volume": 0.1,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "off": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/off",
+        "stream": true,
+        "volume": 0.1,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "blast": {
+    "max_distance": 64.0,
+    "sounds": [
+      {
+        "name": "sounds/blast",
+        "stream": true,
+        "volume": 0.1,
+        "load_on_low_memory": true
+      }
+    ]
+  }
+}
