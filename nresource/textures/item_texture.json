@@ -1,0 +1,14 @@
+{
+    "resource_pack_name":"naruto",
+    "texture_data":{
+        "fireball_jutsu":{
+            "textures": "textures/items/fire_ball_jutsu"
+        },
+        "amour_test":{
+            "textures":"textures/items/test"
+        },
+        "ramen":{
+            "textures":"textures/items/ramen"
+        }
+    }
+}

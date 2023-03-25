@@ -1,0 +1,15 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "glow:entity_emissive_alpha": {},
+    "glow_glass_blender:entity_emissive_alpha": {
+      "+defines": [ "USE_ONLY_EMISSIVE" ]
+    },
+    "translucence:entity_alphatest": {},
+    "glass:entity": {
+      "+states": [ "Blending" ]
+    },
+    "charged:charged_creeper": {},
+	"glint:entity_alphatest_glint": {}
+  }
+}
