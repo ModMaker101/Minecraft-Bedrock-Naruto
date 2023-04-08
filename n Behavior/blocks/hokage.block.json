@@ -9,7 +9,10 @@
 			}
 		},
 		"components": {
-			"minecraft:collision_box": true,
+			"minecraft:collision_box": {
+				"origin":[4.15, 0, -7.5],
+				"size":[1.85, 13, 2]
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 2
 			},
@@ -22,6 +25,9 @@
 					"texture": "hokage",
 					"render_method": "alpha_test"
 				}
+			},
+			"minecraft:on_placed": {
+				"target": "self"
 			},
 			"minecraft:light_emission": 2,
 			"minecraft:map_color": "#a30000"

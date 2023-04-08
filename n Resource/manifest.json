@@ -1,45 +1,23 @@
 {
 	"format_version": 2,
-	"metadata": {
-		"authors": [
-			"ModMaker101 (github)",
-            "kentcooper (github)"
-		]
-	},
 	"header": {
 		"name": "pack.name",
 		"description": "pack.description",
-		"min_engine_version": [
-			1,
-			19,
-			70
-		],
-		"uuid": "07584ee4-456e-4927-bdbc-0dd1dcc4e676",
-		"version": [
-			1,
-			0,
-			0
-		]
+		"uuid": "0a370fea-7637-4944-bf41-c008d96b9f50",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.1.1"]
+		}
 	},
 	"modules": [
 		{
+			"description": "n",
 			"type": "resources",
-			"uuid": "d4d37ac2-3b6e-4bb8-b392-4d2cbae48c64",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	],
-	"dependencies": [
-		{
-			"uuid": "b27eb543-302e-489b-a5f8-9c3e189823b5",
-			"version": [
-				1,
-				0,
-				0
-			]
+			"uuid": "fa860a01-bf77-4652-afa2-0366bcc1b910",
+			"version": [1, 0, 0]
 		}
 	]
 }
