@@ -1,4 +1,4 @@
-# Naruto-Bedrock [![Latest release](https://img.shields.io/github/release/modmaker101/Minecraft-bedrock-naruto.svg](https://github.com/modmaker101/minecraft-bedrock-naruto/releases/latest)
+# Naruto-Bedrock [![Latest release](https://badgen.net/github/release/modmaker101/minecraft-bedrock-naruto)
 Minecraft bedrock Naruto addon
 do not copy this project.
 
