@@ -20,7 +20,7 @@
           "item": "minecraft:glass"
         },
         "M":{
-            "item":"minecraft:beef"
+            "item":"minecraft:cooked_beef"
         }
       },
       "result": {
