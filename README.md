@@ -5,6 +5,7 @@ Minecraft bedrock Naruto addon
 do not copy this project.
 
 To do list
+- [ ] add scripts
 - [ ] more entities
 - [ ] more items
 - [ ] better icon
