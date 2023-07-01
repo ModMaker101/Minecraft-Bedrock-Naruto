@@ -5,7 +5,10 @@
 | 1.1.4.2 | :white_check_mark: |
 |<1.1.4.1 | :white_check_mark: |
 
-<span style="color:red">Warnings</span>
+<style>
+  r {color:red}
+</style>
+<r>Warnings</r>
 
 -Lower Versions may be more buggy but all version should work with 1.20.1
 
