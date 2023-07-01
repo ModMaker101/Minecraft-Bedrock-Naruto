@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.chase.white_zestu",
+				"identifier": "geometry.naruto.white_zestu",
 				"texture_width": 91,
 				"texture_height": 91,
 				"visible_bounds_width": 3,

@@ -2,7 +2,7 @@
   "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "chase:teleport_kuani",
+      "identifier": "naruto:teleport_kuani",
       "category": "Equipment"
     },
     "components": {
@@ -66,13 +66,13 @@
     "events": {
 	  "laiser": {
 	    "shoot": {
-		  "teleport": "chase:teleport_kuani",
+		  "teleport": "naruto:teleport_kuani",
 		  "launch_power": 1
 		},
 		"run_command": {
 			"command": [
        "playsound jutsu @a[x=~,y=~,z=~,r=10]",
-       "particle chase:teleport_kunai_particle ^^1.6^0.8"
+       "particle naruto:teleport_kunai_particle ^^1.6^0.8"
 		  ]
 	    }
 	  }

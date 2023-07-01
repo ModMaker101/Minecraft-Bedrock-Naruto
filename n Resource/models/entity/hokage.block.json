@@ -2,7 +2,7 @@
 	"format_version": "1.19.50",
 	"minecraft:block": {
 		"description": {
-			"identifier": "chase:hokage",
+			"identifier": "naruto:hokage",
 			"menu_category": {
 				"category": "construction",
 				"group": "itemGroup.name.walls"

@@ -2,7 +2,7 @@
   "format_version": "1.12.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "chase:teleport_kuani",
+      "identifier": "naruto:teleport_kuani",
       "is_spawnable": false,
       "is_summonable": false,
       "is_experimental": false,
