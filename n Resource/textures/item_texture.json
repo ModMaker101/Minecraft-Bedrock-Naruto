@@ -7,8 +7,8 @@
         "ramen":{
             "textures":"textures/items/ramen"
         },
-        "shuriken":{
-            "textures":"textures/items/weapons/shuriken"
-        }
+        "shuriken": {
+			"textures": "textures/items/weapons/shuriken"
+		}
     }
 }
