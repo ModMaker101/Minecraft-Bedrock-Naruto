@@ -6,6 +6,9 @@
         },
         "ramen":{
             "textures":"textures/items/ramen"
-        }
+        },
+        "shuriken": {
+			"textures": "textures/items/weapons/shuriken"
+		}
     }
 }

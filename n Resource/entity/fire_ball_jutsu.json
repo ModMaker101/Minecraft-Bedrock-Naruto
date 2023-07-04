@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "chase:fire_ball_jutsu",
+      "identifier": "naruto:fire_ball_jutsu",
       "materials": {
         "default": "egg"
       },
@@ -22,7 +22,7 @@
         ]
       },
       "particle_effects": {
-          "fire_trail":"chase:fire"
+          "fire_trail":"naruto:fire"
       }
     }
   }
