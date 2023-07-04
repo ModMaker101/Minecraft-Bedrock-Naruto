@@ -1,9 +1,9 @@
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.1.6   | :white_check_mark: |
-| 1.1.5   | :white_check_mark: |
-| 1.1.4.2 | :white_check_mark: |
-|<1.1.4.1 | :white_check_mark: |
+|  1.2.1  | :white_check_mark: |
+|  1.2.0  | :white_check_mark: |
+|  1.1.6  | :white_check_mark: |
+| <1.1.5  | :white_check_mark: |
 
 Warnings
 
