@@ -1,4 +1,4 @@
-﻿execute as @e[type=item,name="oak log"] ~~~ setblock ~~1~ air 0 destroy
+execute as @e[type=item,name="oak log"] ~~~ setblock ~~1~ air 0 destroy
 execute as @e[type=item,name="birch log"] ~~~ setblock ~~1~ air 0 destroy
 execute as @e[type=item,name="spruce log"] ~~~ setblock ~~1~ air 0 destroy
 execute as @e[type=item,name="jungle log"] ~~~ setblock ~~1~ air 0 destroy
@@ -17,4 +17,5 @@ execute as @e[type=item,name="stripped dark oak log"] ~~~ setblock ~~1~ air 0 de
 execute as @e[type=item,name="stripped crimson stem"] ~~~ setblock ~~1~ air 0 destroy
 execute as @e[type=item,name="stripped warped stem"] ~~~ setblock ~~1~ air 0 destroy
 execute as @e[type=item,name="stripped mangrove log"] ~~~ setblock ~~1~ air 0 destroy
+execute as @e[type=item,name="cherry log"] ~~~ setblock ~~1~ air 0 destroy
 execute as @e[type=item,name="stripped cherry log"] ~~~ setblock ~~1~ air 0 destroy
