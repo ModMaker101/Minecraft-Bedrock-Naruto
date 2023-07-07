@@ -11,3 +11,4 @@ To do list
 - [ ] better icon
 - [ ] make variants
 - [ ] have fun
+- [ ] make kunai
