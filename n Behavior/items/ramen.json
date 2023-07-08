@@ -1,5 +1,5 @@
 {
-    "format_version": "1.10",
+    "format_version": "1.20.0",
     "minecraft:item": {
       "description": {
         "identifier": "naruto:ramen"
@@ -8,7 +8,7 @@
       "components": {
         "minecraft:use_duration": 32,
         "minecraft:food": {
-          "nutrition": 8,
+          "nutrition": 20,
           "saturation_modifier": "high"
         }
       }
