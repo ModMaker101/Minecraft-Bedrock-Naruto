@@ -4,7 +4,7 @@
 		"name": "pack.name",
 		"description": "pack.description",
 		"uuid": "fa860a01-bf77-4652-afa2-0366bcc1b910",
-		"version": [1, 0, 0],
+		"version": [1, 2, 1],
 		"min_engine_version": [1, 16, 0]
 	},
 	"metadata": {
@@ -15,15 +15,27 @@
 	"modules": [
 		{
 			"description": "Behavior",
-			"version": [1, 0, 0],
+			"version": [1, 2, 1],
 			"uuid": "3985adef-3e59-46d2-96ea-27b506be3cb9",
 			"type": "data"
-		}
+		},
+		{
+			"description": "JavaScript module code",
+			"language": "javascript",
+			"type": "script",
+			"uuid": "9717780a-c69f-4679-bbe6-dbf6dfcdd7de",
+			"version": [1, 2, 1],
+			"entry": "scripts/main.js"
+		  }
 	],
 	"dependencies": [
 		{
 			"uuid": "127bc3e0-7bd4-40a5-a531-56338c6fc679",
-			"version": [1, 0, 0]
-		}
+			"version": [1, 2, 1]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.3.0-beta"
+		  }
 	]
 }

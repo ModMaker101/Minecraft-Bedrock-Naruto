@@ -4,7 +4,7 @@
 		"name": "pack.name",
 		"description": "pack.description",
 		"uuid": "0a370fea-7637-4944-bf41-c008d96b9f50",
-		"version": [1, 0, 0],
+		"version": [1, 2, 1],
 		"min_engine_version": [1, 16, 0]
 	},
 	"metadata": {
@@ -17,7 +17,7 @@
 			"description": "n",
 			"type": "resources",
 			"uuid": "fa860a01-bf77-4652-afa2-0366bcc1b910",
-			"version": [1, 0, 0]
+			"version": [1, 2, 1]
 		}
 	]
 }
