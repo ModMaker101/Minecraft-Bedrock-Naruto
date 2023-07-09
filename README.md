@@ -12,3 +12,4 @@ To do list
 - [ ] make variants
 - [ ] have fun
 - [ ] make kunai
+- [X] finish tree chopper
