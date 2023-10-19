@@ -11,14 +11,11 @@
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.sword"
 			},
-			"minecraft:max_stack_size": 1,
+			"minecraft:max_stack_size": 32,
 			// This is a new change as we want it to be equippable in the hand
 			"minecraft:hand_equipped": true,
-			"minecraft:durability": {
-				"max_durability": 600
-			},
 			// Give it however much damage you want
-			"minecraft:damage": 10,
+			"minecraft:damage": 5,
 			// We also let it be enchantable in the "sword" slot
 			"minecraft:enchantable": {
 				"value": 10,
@@ -31,15 +28,17 @@
 			"minecraft:display_name": {
 				"value": "My Custom Sword"
 			},
-			// Allow the sword to be repaired with sticks
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": "minecraft:iron_nugget",
-						"repair_amount": "context.other->q.remaining_durability + 0.05 * context.other->q.max_durability"
-					}
-				]
-			}
+			"minecraft:projectile": {
+				"projectile_entity": "naruto:shuriken"
+			},
+			"minecraft:throwable": {
+				"do_swing_animation": true,
+				"launch_power_scale": 1.0,
+				"max_draw_duration": 0.0,
+				"max_launch_power": 1.0,
+				"min_draw_duration": 0.0,
+				"scale_power_by_draw_duration": false
+			}	
 		}
 	}
 }
