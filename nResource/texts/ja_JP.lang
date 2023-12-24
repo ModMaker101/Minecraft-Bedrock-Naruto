@@ -1,5 +1,6 @@
-item.naruto:fire_ball_justu.name=§c ファイアボールジャストゥ
+item.naruto:fire_ball_justu.name=§c ファイアーボール・ジュシュ
 tile.naruto:hokage.name=火影サイン
-item.naruto:ramen.name=§e ラーメン
-pack.name=§2 Minecraft の岩盤 §e Naruto Mod
-pack.description=この mod は、アニメのナルト、ナルト疾風伝、およびボルトをゲームに追加します。現時点では、このパックは開発中です。このパックにさらに多くを追加したいと考えています。から、ModMaker101 と kentcooper
+item.naruto:ramen.name=§ ラーメン
+pack.name=§2 Minecraft Bedrock §e NARUTO Mod
+pack.description=この MOD は、アニメ NARUTO、NARUTO 疾風伝、BORUTO をゲームに追加します。現時点では、このパックは開発中です。このパックにはさらに多くの機能を追加したいと考えています。 ModMaker101 および kentcooper より
+
