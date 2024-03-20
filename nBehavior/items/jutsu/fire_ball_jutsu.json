@@ -1,9 +1,5 @@
 {
-<<<<<<<< Updated upstream:nBehavior/items/fire_ball_jutsu.json
-  "format_version": "1.20.30",
-========
   "format_version": "1.20.0",
->>>>>>>> Stashed changes:n Behavior/items/jutsu/fire_ball_jutsu.json
   "minecraft:item": {
     "description": {
       "identifier": "naruto:fire_ball_jutsu",
