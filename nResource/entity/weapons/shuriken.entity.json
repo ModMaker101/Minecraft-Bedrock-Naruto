@@ -1,5 +1,9 @@
 {
+<<<<<<< Updated upstream:nResource/entity/weapons/shuriken.entity.json
     "format_version": "1.20.30",
+=======
+    "format_version": "1.20.0",
+>>>>>>> Stashed changes:n Resource/entity/weapons/shuriken.entity.json
     "minecraft:client_entity": {
       "description": {
         "identifier": "naruto:shuriken",
