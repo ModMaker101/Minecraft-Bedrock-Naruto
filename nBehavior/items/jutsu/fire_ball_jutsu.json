@@ -1,0 +1,52 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "naruto:fire_ball_jutsu",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.sword"
+      },
+      "minecraft:icon": {
+        "texture": "fireball_jutsu"
+      },
+    "minecraft:max_stack_size": 1,
+    "minecraft:hand_equipped": true,
+    "minecraft:durability": {
+        "max_durability": 1
+      },
+      "minecraft:damage": 1.5,
+      "minecraft:can_destroy_in_creative": false,
+      
+      
+      
+      "minecraft:use_duration": 2,
+
+	  "minecraft:cooldown": {
+		"category": "tiro",
+		"duration": 4
+	  },
+	  "minecraft:on_use": {
+		"on_use": {
+		  "event": "laiser"
+		}
+	  }
+    },
+    "events": {
+	  "laiser": {
+	    "shoot": {
+		  "projectile": "naruto:fire_ball_jutsu",
+		  "launch_power": 1
+		},
+		"run_command": {
+			"command": [
+       "playsound jutsu @a[x=~,y=~,z=~,r=10]",
+       "particle minecraft:basic_smoke_particle ^^1.6^0.8"
+		  ]
+	    }
+	  }
+    }
+  }
+}
