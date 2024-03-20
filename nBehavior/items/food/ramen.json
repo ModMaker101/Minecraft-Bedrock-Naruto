@@ -1,16 +1,26 @@
 {
-    "format_version": "1.20.0",
-    "minecraft:item": {
-      "description": {
-        "identifier": "naruto:ramen"
-      },
-  
-      "components": {
-        "minecraft:use_duration": 32,
-        "minecraft:food": {
-          "nutrition": 20,
-          "saturation_modifier": "high"
-        }
-      }
-    }
-  }
+	"format_version": "1.20.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "naruto:ramen",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.crop"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "ramen"
+			},
+			"minecraft:food": {
+				"nutrition": 15,
+				"saturation_modifier": 1
+			},
+			"minecraft:use_duration": {
+				"value": 1.6
+			},
+			"minecraft:use_animation": "eat"
+		}
+	}
+}
