@@ -16,5 +16,6 @@ To do list
 - [ ] better icon
 - [ ] make variants
 - [ ] have fun
-- [ ] make kunai
-- [X] finish tree chopper
+- [x] make kunai
+- [ ] make katana
+- [ ] make more versions
