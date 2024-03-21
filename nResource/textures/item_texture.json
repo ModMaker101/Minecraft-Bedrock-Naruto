@@ -9,6 +9,9 @@
         },
         "shuriken": {
 			"textures": "textures/items/weapons/shuriken"
-		}
+		},
+        "kunai": {
+            "textures": "textures/items/weapons/kunai"
+        }
     }
 }
