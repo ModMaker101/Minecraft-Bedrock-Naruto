@@ -2,7 +2,7 @@
 ![Releases](https://badgen.net/github/release/modmaker101/minecraft-bedrock-naruto)  ![issues](https://badgen.net/github/open-issues/modmaker101/minecraft-bedrock-naruto)  ![License](https://badgen.net/badge/license/BSL/blue) ![branches](https://badgen.net/github/branches/modmaker101/minecraft-bedrock-naruto) ![pr's](https://badgen.net/github/merged-prs/modmaker101/minecraft-bedrock-naruto)
 
 # Check This Out
-[This is an organization](https://github.com/Minecraft-Bedrock-Addons/Minecraft-Bedrock-Naruto)
+[This is my organization](https://github.com/Minecraft-Bedrock-Addons/Minecraft-Bedrock-Naruto)
 
 # Issues
 If you find issues please!!! report it as this will help others not expirence the issue
