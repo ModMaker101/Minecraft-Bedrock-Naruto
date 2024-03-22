@@ -12,6 +12,9 @@
 		},
         "kunai": {
             "textures": "textures/items/weapons/kunai"
-        }
+        },
+        "katana": {
+			"textures": "textures/items/weapons/katana"
+		}
     }
 }
