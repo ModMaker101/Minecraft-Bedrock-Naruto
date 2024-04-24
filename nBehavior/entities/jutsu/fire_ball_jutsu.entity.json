@@ -114,8 +114,7 @@
         "add": {
           "component_groups": [ "despawning" ]
         }
-      },
-      "minecraft:light_emission": 15
+      }
     }
   }
 }
