@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.fire_ball_jutsu": {
+		"animation.fireball_jutsu": {
 			"loop": true,
 			"particle_effects": {
 				"0.0": {
