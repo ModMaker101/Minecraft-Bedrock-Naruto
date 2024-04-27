@@ -1,8 +1,8 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.16.100",
   "minecraft:item": {
     "description": {
-      "identifier": "naruto:fire_ball_jutsu",
+      "identifier": "naruto:fireball_jutsu",
       "category": "Equipment"
     },
     "components": {
@@ -15,7 +15,7 @@
     "minecraft:max_stack_size": 1,
     "minecraft:hand_equipped": true,
     "minecraft:durability": {
-        "max_durability": 1
+        "max_durability": 9999
       },
       "minecraft:damage": 1.5,
       "minecraft:can_destroy_in_creative": false,
@@ -32,12 +32,40 @@
 		"on_use": {
 		  "event": "laiser"
 		}
-	  }
+	  },
+	  
+	  
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "first_person": { 
+            "position": [0.0,0.0,0.0],
+            "rotation": [0.0,0.0,0.0],
+            "scale": [0.0,0.0,0.0]
+          },
+          "third_person": { 
+            "position": [0.0,0.0,0.0],
+            "rotation": [0.0,0.0,0.0],
+            "scale": [0.0,0.0,0.0]
+          }
+        },
+        "off_hand": {
+          "first_person": { 
+            "position": [0.0,0.0,0.0],
+            "rotation": [0.0,0.0,0.0],
+            "scale": [0.0,0.0,0.0]
+          },
+          "third_person": { 
+            "position": [0.0,0.0,0.0],
+            "rotation": [0.0,0.0,0.0],
+            "scale": [0.0,0.0,0.0]
+          }
+        }
+      }
     },
     "events": {
 	  "laiser": {
 	    "shoot": {
-		  "projectile": "naruto:fire_ball_jutsu",
+		  "projectile": "naruto:fireball_jutsu",
 		  "launch_power": 1
 		},
 		"run_command": {
