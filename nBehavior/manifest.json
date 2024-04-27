@@ -7,11 +7,6 @@
 		"version": [1, 2, 1],
 		"min_engine_version": [1, 16, 0]
 	},
-	"metadata": {
-		"generated_with": {
-			"blockbench_entity_wizard": ["1.1.1"]
-		}
-	},
 	"modules": [
 		{
 			"description": "Behavior",
@@ -35,7 +30,7 @@
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.10.0-beta"
+			"version": "1.11.0-beta"
 		  }
 	]
 }
