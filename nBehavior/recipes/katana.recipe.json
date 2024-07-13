@@ -1,0 +1,31 @@
+{
+    "format_version": "1.21.2",
+    "minecraft:recipe_shaped": {
+      "description": {
+        "identifier": "naruto:katana"
+      },
+      "tags": [
+        "crafting_table"
+      ],
+      "pattern": [
+        " #A",
+        "#A#",
+        "B# "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:iron_nugget"
+        },
+        "A": {
+          "item": "minecraft:iron_ingot"
+        },
+        "B": {
+          "item": "minecraft:stick"
+        }
+      },
+      "result": {
+        "item": "naruto:katana",
+        "count": 1
+      }
+    }
+  }
