@@ -1,5 +1,8 @@
 //js files
-import "./serverSide/server.say"
+import "./server.say"
+//chakra
+import { ChakraAPI } from "./chakra/chakraAPI.js";
+import { JutsuHandler } from "./chakra/jutsuHandler.js";
+import "./chakra/chakraVisuals.js";
 
-//module for the motd(aka the thank you message)
-    import { ingMessage } from './serverSide/server.say';
+ChakraAPI.initialize();
