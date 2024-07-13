@@ -21,5 +21,5 @@ To do list
 - [ ] make variants
 - [ ] have fun
 - [x] make kunai
-- [ ] make katana
+- [x] make katana
 - [ ] make more versions
