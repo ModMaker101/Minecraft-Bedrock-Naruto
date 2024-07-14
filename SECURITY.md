@@ -1,6 +1,6 @@
 | Version | Supported          | Mc Version Supported |
 | ------- | ------------------ |---------|
-|  1.2.5.1  | :heavy_check_mark: | 1.21.2 |
+|  1.2.5.1  | :heavy_check_mark: | 1.20.51 |
 |  1.2.5  | :heavy_check_mark: | 1.20.82 |
 
 Warnings

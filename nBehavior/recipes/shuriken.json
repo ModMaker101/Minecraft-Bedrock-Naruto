@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.2",
+    "format_version": "1.20.51",
     "minecraft:recipe_shaped": {
       "description": {
       "identifier": "naruto:shuriken"
@@ -17,6 +17,11 @@
             "item":"minecraft:iron_nugget"
         }
       },
+      "unlock": [
+        {
+          "item": "minecraft:air"
+        }
+      ],
       "result": {
         "item": "naruto:shuriken"
       }
