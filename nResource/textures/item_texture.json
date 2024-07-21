@@ -5,7 +5,7 @@
             "textures": "textures/items/fireball_jutsu"
         },
         "ramen":{
-            "textures":"textures/items/ramen"
+            "textures":"textures/items/misc/ramen"
         },
         "shuriken": {
 			"textures": "textures/items/weapons/shuriken"
@@ -15,6 +15,12 @@
         },
         "katana": {
 			"textures": "textures/items/weapons/katana"
+		},
+        "glass_bowl": {
+			"textures": "textures/items/misc/glass_bowl.png"
+		},
+        "noodles": {
+			"textures": "textures/items/misc/noodles.png"
 		}
     }
 }

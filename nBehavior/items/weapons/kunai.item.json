@@ -8,9 +8,6 @@
 		"components": {
             "minecraft:hand_equipped":true,
 			"minecraft:max_stack_size": 32,
-			"minecraft:display_name": {
-				"value": "kunai"
-			},
 			"minecraft:icon": {
 				"texture": "kunai"
 			},
@@ -26,8 +23,6 @@
 				"scale_power_by_draw_duration": false
 			},
             "minecraft:damage": 5
-		},
-		"events": {
 		}
 	}
 }

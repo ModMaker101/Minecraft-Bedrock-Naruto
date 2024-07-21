@@ -19,11 +19,12 @@
       },
       "unlock": [
         {
-          "item": "minecraft:air"
+          "item": "minecraft:iron"
         }
       ],
       "result": {
-        "item": "naruto:shuriken"
+        "item": "naruto:shuriken",
+        "count": 16
       }
     }
   }
