@@ -1,35 +1,42 @@
 {
-  "format_version": "1.20.51",
+  "format_version": "1.12",
   "minecraft:recipe_shaped": {
-    "description": {
-      "identifier": "naruto:ramen"
-    },
-    "tags": [
-      "crafting_table"
-    ],
-    "pattern": [
-      "WWW",
-      "GMG",
-      " G "
-    ],
-    "key": {
-      "W": {
-        "item": "minecraft:wheat"
+      "description": {
+          "identifier": "naruto:ramen"
       },
-      "G": {
-        "item": "minecraft:glass"
+      "tags": [
+          "crafting_table"
+      ],
+      "pattern": [
+          "##/",
+          "DCC",
+          " N "
+      ],
+      "key": {
+          "#": {
+              "item": "naruto:noodles"
+          },
+          "/": {
+              "item": "minecraft:stick"
+          },
+          "D": {
+              "item": "minecraft:dried_kelp"
+          },
+          "C": {
+              "item": "minecraft:cooked_beef"
+          },
+          "N": {
+              "item": "naruto:glass_bowl"
+          }
       },
-      "M": {
-        "item": "minecraft:cooked_beef"
+      "unlock": [
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ],
+      "result": {
+          "item": "naruto:ramen",
+          "count": 8
       }
-    },
-    "unlock": [
-      {
-        "item": "minecraft:cooked_beef"
-      }
-    ],
-    "result": {
-      "item": "naruto:ramen"
-    }
   }
 }

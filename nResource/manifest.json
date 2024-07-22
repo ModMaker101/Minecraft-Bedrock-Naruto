@@ -4,20 +4,15 @@
 		"name": "pack.name",
 		"description": "pack.description",
 		"uuid": "ffa92ba2-3f38-40f6-b5d4-828b127f965f",
-		"version": [1, 2, 1],
+		"version": [1, 2, 5],
 		"min_engine_version": [1, 16, 0]
-	},
-	"metadata": {
-		"generated_with": {
-			"blockbench_entity_wizard": ["1.1.1"]
-		}
 	},
 	"modules": [
 		{
 			"description": "n",
 			"type": "resources",
 			"uuid": "6b94d548-9be2-4efa-8705-4ac0ea1317d5",
-			"version": [1, 2, 1]
+			"version": [1, 2, 5]
 		}
 	]
 }

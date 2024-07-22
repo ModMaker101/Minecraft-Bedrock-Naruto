@@ -1,8 +1,8 @@
 {
-	"format_version": "1.20.30",
+	"format_version": "1.20.50",
 	"minecraft:item": {
 		"description": {
-			"identifier": "naruto:ramen",
+			"identifier": "naruto:noodles",
 			"menu_category": {
 				"category": "equipment",
 				"group": "itemGroup.name.miscFood"
@@ -11,14 +11,15 @@
 		"components": {
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": {
-				"texture": "ramen"
+				"texture": "noodles"
 			},
 			"minecraft:food": {
-				"nutrition": 15,
-				"saturation_modifier": 2
+				"nutrition": 3,
+				"saturation_modifier": 0.6
 			},
-			"minecraft:use_duration": {
-				"value": 1.6
+			"minecraft:use_modifiers": {
+				"movement_modifier": 0.32,
+				"use_duration": 0.9
 			},
 			"minecraft:use_animation": "eat"
 		}
