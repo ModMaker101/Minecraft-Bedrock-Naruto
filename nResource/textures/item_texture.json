@@ -21,6 +21,9 @@
 		},
         "noodles": {
 			"textures": "textures/items/misc/noodles.png"
+		},
+        "boiled_egg": {
+			"textures": "textures/items/misc/boiled_egg.png"
 		}
     }
 }
