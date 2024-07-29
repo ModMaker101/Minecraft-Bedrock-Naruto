@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "naruto:fireball_jutsu",
+      "materials": {
+        "default": "egg"
+      },
+      "textures": {
+        "default": "textures/jutsus/fireball_jutsu"
+      },
+      "geometry": {
+        "default": "geometry.fireball_jutsu"
+      },
+      "render_controllers": [ "controller.render.fireball_jutsu" ],
+      "animations": {
+        "flying": "animation.fireball_jutsu"
+      },
+      "scripts": {
+        "animate": [
+          "flying"
+        ]
+      },
+      "particle_effects": {
+          "fire_trail":"naruto:fire"
+      }
+    }
+  }
+} 

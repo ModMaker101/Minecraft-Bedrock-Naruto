@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10",
+    "animation_controllers": {
+      "controller.animation.player.running_controller": {
+        "initial_state": "default",
+        "states": {
+          "default": {
+            "transitions": [
+              { "running": "query.is_sprinting" }
+            ]
+          },
+          "running": {
+            "on_entry": [
+              "tag @s add running"
+            ],
+            "animations": ["naruto_sprint"],
+            "transitions": [
+              { "default": "!query.is_sprinting" }
+            ],
+            "on_exit": [
+              "tag @s remove running"
+            ]
+          }
+        }
+      }
+    }
+  }
+  
