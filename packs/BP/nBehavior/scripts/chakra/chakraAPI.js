@@ -6,7 +6,7 @@ const ChakraAPI = {
     if (!objective) {
       world.scoreboard.addObjective("chakra", "dummy", "Chakra");
     }
-    player.runCommand(`scoreboard players set @s chakra ${initialChakra}`);
+    player.runCommandAsync(`scoreboard players set @s chakra ${initialChakra}`);
     this.updateChakraVisual(player);
     console.log(`Initialized chakra for ${player.name}`);
   },
@@ -14,7 +14,7 @@ const ChakraAPI = {
   getPlayerChakra(player) {
     const objective = world.scoreboard.getObjective("chakra");
     if (objective) {
-      return objective.getScore(player.scoreboard);
+      return objective.getScore(player);
     }
     return 0;
   },
@@ -22,7 +22,7 @@ const ChakraAPI = {
   setPlayerChakra(player, amount) {
     const objective = world.scoreboard.getObjective("chakra");
     if (objective) {
-      player.runCommand(`scoreboard players set @s chakra ${amount}`);
+      player.runCommandAsync(`scoreboard players set @s chakra ${amount}`);
       this.updateChakraVisual(player);
       console.log(`Set chakra for ${player.name} to ${amount}`);
     }
@@ -39,7 +39,7 @@ const ChakraAPI = {
       this.setPlayerChakra(player, currentChakra - amount);
       return true;
     } else {
-      player.runCommand(`tellraw @s {"rawtext":[{"text":"Not enough chakra!"}]}`);
+      player.runCommandAsync(`tellraw @s {"rawtext":[{"text":"Not enough chakra!"}]}`);
       console.log(`Not enough chakra for ${player.name}`);
       return false;
     }
@@ -47,12 +47,12 @@ const ChakraAPI = {
 
   updateChakraVisual(player) {
     const currentChakra = this.getPlayerChakra(player);
-    player.runCommand(`title @s actionbar {"rawtext":[{"text":"Chakra: ${currentChakra}"}]}`);
+    player.runCommandAsync(`title @s actionbar {"rawtext":[{"text":"Chakra: ${currentChakra}"}]}`);
     console.log(`Updated chakra visual for ${player.name} to ${currentChakra}`);
   }
 };
 
-world.afterEvents.playerSpawn.subscribe(event => {
+world.events.playerJoin.subscribe(event => {
   const player = event.player;
   system.run(() => {
     ChakraAPI.initializePlayerChakra(player);

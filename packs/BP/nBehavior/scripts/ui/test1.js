@@ -1,9 +1,3 @@
-//js files
-import "./server.say"
-//chakra
-
-
-//animations
 import { world } from "@minecraft/server"
 import { ActionFormData } from "@minecraft/server-ui"
 
@@ -17,10 +11,9 @@ const ui = new ActionFormData()
 const customUi = new ActionFormData()
     .title("Custom Form")
     .body("")
-    .button("Rewards", "textures/ui/promo_holiday_gift_small")
-    .button("Shop", "textures/ui/icon_deals")
-    .button("Ban Tool", "textures/ui/hammer_l")
-    .button("Skins", "textures/ui/icon_hangar");
+    .button("button1")
+    .button("button2")
+    .button("button3");
 
 world.afterEvents.itemUse.subscribe((event) => {
     const { source, itemStack } = event

@@ -1,21 +1,55 @@
 {
 	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.2.json",
-	"author": "Your name",
-	"name": "Project name",
+	"author": "ModMaker101",
+	"name": "Naruto",
 	"packs": {
 		"behaviorPack": "./packs/BP",
 		"resourcePack": "./packs/RP"
 	},
 	"regolith": {
 		"dataPath": "./packs/data",
-		"filterDefinitions": {},
+		"filterDefinitions": {
+			"JSon-cleaner": {
+				"url": "github.com/llgava/regolith-filters",
+				"version": "1.0.1"
+			},
+			"bump_manifest": {
+				"url": "github.com/Bedrock-OSS/regolith-filters",
+				"version": "1.0.0"
+			},
+			"js_formatter": {
+				"url": "github.com/MajestikButter/Regolith-Filters",
+				"version": "6fa6a6a9298f7d033d0f2e421edfb33292807aae"
+			},
+			"minimize": {
+				"url": "github.com/cda94581/regolith-filters",
+				"version": "0.0.4"
+			},
+			"run_counter": {
+				"url": "github.com/Nusiq/regolith-filters",
+				"version": "1.0.2"
+			}
+		},
 		"profiles": {
 			"default": {
 				"export": {
 					"readOnly": false,
 					"target": "development"
 				},
-				"filters": []
+				"filters": [
+					{
+						"filter": "js_formatter"
+					},
+					{
+						"filter": "run_counter"
+					},
+					{
+						"filter": "minimize"
+					},
+					{
+						"filter": "bump_manifest"
+					}
+				]
 			}
 		}
 	}
