@@ -1,0 +1,29 @@
+{
+    "resource_pack_name":"naruto",
+    "texture_data":{
+        "fireball_jutsu":{
+            "textures": "textures/items/fireball_jutsu"
+        },
+        "ramen":{
+            "textures":"textures/items/misc/ramen"
+        },
+        "shuriken": {
+			"textures": "textures/items/weapons/shuriken"
+		},
+        "kunai": {
+            "textures": "textures/items/weapons/kunai"
+        },
+        "katana": {
+			"textures": "textures/items/weapons/katana"
+		},
+        "glass_bowl": {
+			"textures": "textures/items/misc/glass_bowl.png"
+		},
+        "noodles": {
+			"textures": "textures/items/misc/noodles.png"
+		},
+        "boiled_egg": {
+			"textures": "textures/items/misc/boiled_egg.png"
+		}
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+      "controller.render.item_sprite": {
+        "geometry": "geometry.default",
+        "materials": [
+          {
+            "mat": "material.default"
+          }
+        ],
+        "textures": [
+          "texture.default"
+        ]
+      }
+    }
+  }
+  
