@@ -1,10 +1,8 @@
 //js files
 import "./server.say"
+import "./ui/test1"
+
 //chakra
-import { ChakraAPI } from "./chakra/chakraAPI.js";
-import "./chakra/chakraVisuals.js";
+
 
 //animations
-
-//init
-ChakraAPI.initialize();
