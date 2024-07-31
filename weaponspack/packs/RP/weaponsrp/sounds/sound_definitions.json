@@ -1,0 +1,10 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"naruto.kunai_throw": {
+			"sounds": [
+				"sounds/kunai.throw"
+			]
+		}
+	}
+}

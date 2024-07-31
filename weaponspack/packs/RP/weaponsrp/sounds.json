@@ -1,0 +1,14 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "naruto:kunaisound": {
+                "events": {
+                    "step": {
+                        "sound": "naruto.kunai_throw",
+                        "volume": 0.8
+                    }
+                }
+            }
+        }
+    }
+}
