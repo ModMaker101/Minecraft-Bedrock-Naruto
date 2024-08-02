@@ -5,6 +5,7 @@
       "identifier": "naruto:fireball_jutsu",
       "category": "Equipment"
     },
+    
     "components": {
       "minecraft:creative_category": {
         "parent": "itemGroup.name.sword"

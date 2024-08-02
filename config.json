@@ -44,9 +44,6 @@
 						"filter": "run_counter"
 					},
 					{
-						"filter": "minimize"
-					},
-					{
 						"filter": "bump_manifest"
 					}
 				]

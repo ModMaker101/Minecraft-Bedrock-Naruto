@@ -10,37 +10,25 @@
       }
     ]
   },
-  "off": {
-    "max_distance": 64.0,
-    "sounds": [
-      {
-        "name": "sounds/off",
-        "stream": true,
-        "volume": 0.1,
-        "load_on_low_memory": true
-      }
-    ]
-  },
-  "blast": {
-    "max_distance": 64.0,
-    "sounds": [
-      {
-        "name": "sounds/blast",
-        "stream": true,
-        "volume": 0.1,
-        "load_on_low_memory": true
-      }
-    ]
-  },
-  "ramen":{
+  "ramen": {
     "max_distance": 5.0,
-    "sounds":[
+    "sounds": [
       {
-    "name":"sounds/ramen",
-    "stream": true,
-    "volume":0.1,
-    "load_on_low_memory":true
-    }
-   ]
-  } 
+        "name": "sounds/ramen",
+        "stream": true,
+        "volume": 0.1,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "kunai": {
+    "max_distance": 3.0,
+    "sounds": [
+      {
+        "name": "sounds/kunai",
+        "stream": true,
+        "volume": 0.6
+      }
+    ]
+  }
 }
