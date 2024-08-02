@@ -9,3 +9,4 @@ function sendMessageToPlayer(player) {
 world.afterEvents.playerSpawn.subscribe((event) => {
     sendMessageToPlayer(event.player);
 });
+//going to change this soon

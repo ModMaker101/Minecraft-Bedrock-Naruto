@@ -17,6 +17,10 @@
 				"url": "github.com/Bedrock-OSS/regolith-filters",
 				"version": "1.0.0"
 			},
+			"export": {
+				"url": "github.com/cda94581/regolith-filters",
+				"version": "0.0.4"
+			},
 			"js_formatter": {
 				"url": "github.com/MajestikButter/Regolith-Filters",
 				"version": "6fa6a6a9298f7d033d0f2e421edfb33292807aae"
@@ -42,6 +46,12 @@
 					},
 					{
 						"filter": "run_counter"
+					},
+					{
+						"filter": "minimize"
+					},
+					{
+						"filter": "export"
 					},
 					{
 						"filter": "bump_manifest"
