@@ -14,7 +14,7 @@ function checkPlayerInventory() {
       }      
     }    
   }
-  system.runTimeout(checkPlayerInventory, 10);
+  system.runTimeout();
 }
 // Start the periodic check
 checkPlayerInventory();

@@ -24,6 +24,10 @@
 		},
         "boiled_egg": {
 			"textures": "textures/items/misc/boiled_egg.png"
+		},
+        "konoha_headband": {
+			"textures": "textures/items/attachables/headbands/k_headband.png"
 		}
+
     }
 }

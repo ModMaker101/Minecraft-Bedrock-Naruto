@@ -9,7 +9,7 @@
 				"enchanted": "entity_alphatest_glint"
 			},
 			"textures": {
-				"default": "textures/entity/attachable/konoha_headband",
+				"default": "textures/models/attachable/konoha_headband",
 				"enchanted": "textures/misc/enchanted_item_glint"
 			},
 			"geometry": {
