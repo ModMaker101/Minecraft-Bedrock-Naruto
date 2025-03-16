@@ -1,0 +1,51 @@
+{
+	"format_version": "1.20.52",
+	"minecraft:item": {
+	  "description": {
+		"identifier": "naruto:kunai",
+		"category": "equipment"
+	  },
+	  "components": {
+		"minecraft:max_stack_size": 32,
+		"minecraft:durability": {
+		  "max_durability": 250
+		},
+		"minecraft:throwable": {
+		  "min_draw_duration": 0,
+		  "max_draw_duration": 0,
+		  "scale_power_by_draw_duration": false,
+		  "do_swing_animation": true
+		},
+		"minecraft:projectile": {
+		  "projectile_entity": "naruto:kunai_projectile",
+		  "minimum_critical_power": 1
+		},
+		"minecraft:creative_category": {
+		  "parent": "equipment"
+		},
+		"minecraft:icon": {
+		  "texture": "kunai"
+		},
+		"minecraft:display_name": {
+		  "value": "Kunai\n§l----------\nthis is cool"
+		},
+		"minecraft:hand_equipped": true,
+		"minecraft:damage": 3,
+		"minecraft:interact": {
+		  "on_interact": {
+			"component": "naruto:kunai_sound"
+		  }
+		}
+	  },
+	  "custom_components": {
+		"naruto:kunai_sound": {
+		  "run_command": {
+			"command": [
+			  "playsound kunai @a[x=~,y=~,z=~,r=10]"
+			]
+		  }
+		}
+	  }
+	}
+  }
+  

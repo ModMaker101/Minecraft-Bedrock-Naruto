@@ -14,7 +14,7 @@
 				"texture": "shuriken"
 			},
 			"minecraft:projectile": {
-				"projectile_entity": "naruto:shuriken"
+				"projectile_entity": "naruto:shuriken_projectile"
 			},
 			"minecraft:throwable": {
 				"do_swing_animation": true,
