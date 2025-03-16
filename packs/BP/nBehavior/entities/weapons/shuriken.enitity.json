@@ -2,7 +2,7 @@
   "format_version": "1.20.51",
   "minecraft:entity": {
     "description": {
-      "identifier": "naruto:shuriken",
+      "identifier": "naruto:shuriken_projectile",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,
