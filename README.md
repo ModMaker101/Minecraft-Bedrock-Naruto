@@ -10,10 +10,19 @@
 
 Welcome to the Naruto-Bedrock addon, where the vibrant world of Naruto collides with the endless possibilities of Minecraft Bedrock Edition. Embark on an epic journey as you summon the spirit of ninjutsu into your gameplay. Dive deep into ninja battles, discover new entities, wield legendary weapons, and experience the thrill of being a shinobi in your Minecraft world.
 
-## Features
+## Features  
 
-### 🌟 Enhanced Gameplay
+### 🌟 Enhanced Gameplay  
 Unleash the power of iconic Naruto elements like kunai, katana, and more. Each item and entity is meticulously crafted to bring authenticity and excitement to your Minecraft adventures.
+
+### 🎨 Emoji Support  
+Elevate your in-game messages with custom emojis using the `:emoji:` command! You can craft messages that stand out, making communication fun and expressive. Whether you're battling enemies or chatting with friends, add a touch of flair to your gameplay! 😎  
+
+**Example:**  
+Correct: `Hi :hi_emoji:` this is an example you don't have to use hi before the command or put any words after the command kinda like Discord 
+
+Be sure to use the exact name of your custom emoji for it to display properly in-game!
+
 
 ### 📜 Dynamic Updates
 Stay tuned as we continuously expand the addon with new scripts, entities, items, and optimizations. Our goal is to provide you with regular updates to enrich your gameplay experience.
