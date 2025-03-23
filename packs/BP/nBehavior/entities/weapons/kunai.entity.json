@@ -2,7 +2,7 @@
 	"format_version": "1.20.51",
 	"minecraft:entity": {
 		"description": {
-			"identifier": "naruto:thrown_kunai",
+			"identifier": "naruto:kunai_projectile",
 			"is_spawnable": false,
 			"is_summonable": false,
 			"is_experimental": false,
