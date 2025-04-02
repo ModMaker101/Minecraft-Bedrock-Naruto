@@ -19,7 +19,11 @@
       },
       "unlock": [
         {
+<<<<<<< Updated upstream
           "item": "minecraft:iron_ingot"
+=======
+          "item": "minecraft:iron_nugget"
+>>>>>>> Stashed changes
         }
       ],
       "result": {
