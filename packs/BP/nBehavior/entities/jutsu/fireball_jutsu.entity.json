@@ -1,10 +1,12 @@
 {
-  "format_version": "1.21.40",
+  "format_version": "1.20.0",
   "minecraft:entity": {
     "description": {
       "identifier": "naruto:fireball_jutsu_projectile",
       "is_spawnable": false,
-      "is_summonable": false
+      "is_summonable": false,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:egg"
     },
 
     "component_groups": {
@@ -12,64 +14,105 @@
         "minecraft:explode": {
           "fuse_length": 0,
           "fuse_lit": true,
-          "power": 1,
+          "power": 2,
           "causes_fire": true,
           "fire_affected_by_griefing": true,
           "destroy_affected_by_griefing": true
+        }
+      },
+      "despawning": {
+        "minecraft:type_family": {
+          "family": [
+            "despawer",
+            "despawer_despawning"
+          ]
         }
       }
     },
 
     "components": {
+      "minecraft:type_family": {
+        "family": [
+          "fireball_jutsu", "fireball_jutsu_projectile"
+        ]
+      },
       "minecraft:collision_box": {
-        "width": 1.0,
-        "height": 1.0
+        "width": 3,
+        "height": 3
       },
       "minecraft:projectile": {
+
         "on_hit": {
-          "impact_damage": {
-            "damage": 6,
-            "knockback": false,
-            "semi_random_diff_damage": false
-          },
           "definition_event": {
             "affect_projectile": true,
             "event_trigger": {
               "event": "minecraft:explode",
               "target": "self"
             }
+          },
+          "impact_damage": {
+            "damage": 13,
+            "knockback": true,
+            "semirandomdiffdamage": false,
+            "destroyonhit": true
           }
         },
-        "power":1.5,
-        "gravity": 0.01,
+        "power": 1.5,
+        "gravity": 0,
         "inertia": 1,
-        "catch_fire": true,
-        "remove_on_hit": true
+        "liquid_inertia": 1,
+        "uncertainty_base": 0,
+        "uncertainty_multiplier": 0,
+        "anchor": 1,
+        "offset": [ 0, 0, 0 ],
+        "reflect_on_hurt": true,
+        "catch_fire": true
       },
-      "minecraft:dimension_bound": {
+      "minecraft:timer": {
+        "looping": true,
+        "random_time_choices": [
+          {
+            "weight": 50,
+            "value": 4
+          }
+        ],
+        "time_down_event": {
+          "event": "minecraft:start_despawn",
+          "target": "self"
+        }
       },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
-      "minecraft:conditional_bandwidth_optimization": {
-        "default_values": {
-          "max_optimized_distance": 80.0,
-          "max_dropped_ticks": 7,
-          "use_motion_prediction_hints": true
+      "minecraft:despawn": {
+        "filters": {
+          "all_of": [
+            {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "self",
+                  "value": "despawer_despawning"
+                }
+              ]
+            }
+          ]
         }
       }
     },
-    "minecraft:type_family": {
-        "family": [ "fireball_jutsu", "fireball_jutsu_projectile" ]
-      },
-
     "events": {
       "minecraft:explode": {
         "add": {
           "component_groups": [
             "minecraft:exploding"
           ]
+        }
+      },
+      "minecraft:start_despawn": {
+        "add": {
+          "component_groups": [ "despawning" ]
         }
       }
     }
