@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10",
+    "header": {
+      "description": "Custom Chakra Bar",
+      "min_engine_version": [1, 16, 0]
+    },
+    "resources": {
+      "textures": {
+        "texture_pack": {
+          "image": "textures/ui/chakra_empty_bar.png",
+          "image_full": "textures/ui/chakra_full_bar.png"
+        }
+      }
+    },
+    "ui": {
+      "layers": [
+        {
+          "type": "image",
+          "id": "chakra_empty_bar",
+          "image": "texture_pack:image",
+          "size": [200, 20],
+          "x": "50%",
+          "y": "95%",
+          "anchor_from": "center"
+        },
+        {
+          "type": "image",
+          "id": "chakra_full_bar",
+          "image": "texture_pack:image_full",
+          "size": [0, 20], // This size will change dynamically
+          "x": "50%",
+          "y": "95%",
+          "anchor_from": "center"
+        }
+      ]
+    }
+  }
+  

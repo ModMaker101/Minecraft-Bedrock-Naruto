@@ -48,6 +48,26 @@
 						"filter": "run_counter"
 					},
 					{
+						"filter": "export"
+					},
+					{
+						"filter": "bump_manifest"
+					}
+				]
+			},
+			"production": {
+				"export": {
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": [
+					{
+						"filter": "js_formatter"
+					},
+					{
+						"filter": "run_counter"
+					},
+					{
 						"filter": "minimize"
 					},
 					{
