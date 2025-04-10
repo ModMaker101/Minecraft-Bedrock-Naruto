@@ -31,7 +31,10 @@
 				"value": "Kunai\n§l----------\nthis is cool"
 			},
 			"minecraft:hand_equipped": true,
-			"minecraft:damage": 3
+			"minecraft:damage": 3,
+			"minecraft:custom_components": [
+				"wiki:unbreakable"
+			]
 		}
 	}
 }

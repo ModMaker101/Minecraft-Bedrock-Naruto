@@ -1,7 +1,8 @@
 {
     "resource_pack_name":"naruto",
+    "texture_name": "atlas.items",
     "texture_data":{
-        "fireball_jutsu":{
+        "naruto:fireball_jutsu":{
             "textures": "textures/items/fireball_jutsu"
         },
         "ramen":{

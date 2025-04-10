@@ -1,14 +1,13 @@
-
 {
-  "format_version": "1.20.50",
+  "format_version": "1.21.10",
   "minecraft:item": {
     "description": {
-      "identifier": "naruto:fireball_jutsu",
+      "identifier": "naruto:fireball",
       "category": "equipment"
     },
     "components": {
       "minecraft:icon": {
-        "texture": "fireball_jutsu"
+        "texture": "naruto:fireball_jutsu"
       },
       "minecraft:projectile": {
         "projectile_entity": "naruto:fireball_jutsu_projectile"
@@ -21,8 +20,11 @@
         "duration": 0.5
       },
       "minecraft:display_name": {
-        "value": "item.wind_charge.name"
-      }
+        "value": "item.naruto:fireball_jutsu"
+      },
+      "minecraft:custom_components": [
+        "naruto:fireball_jutsu_component"
+      ]
     }
   }
 }
