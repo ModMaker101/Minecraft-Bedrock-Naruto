@@ -22,7 +22,9 @@
 						"semi_random_diff_damage": false,
 						"destroy_on_hit": true
 					},
-					"remove_on_hit": {},
+					"stick_in_ground": {
+            "shake_time": 0
+          },
 			"particle_on_hit": {
 			  "particle_type": "iconcrack",
 			  "num_particles": 3,
