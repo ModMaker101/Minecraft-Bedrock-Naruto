@@ -1,5 +1,5 @@
 import { checkPlayerInventory } from "./items/lore";
-import { system, world  } from "@minecraft/server";
+import { system, world, Player } from "@minecraft/server";
 checkPlayerInventory();
 
 import { setupEmojiListCommand, setupHelpCommand, setupHelpListCommand } from "./emojis";
@@ -24,7 +24,7 @@ function getChakra(player) {
 // Function to update the Chakra display (runs every second)
 function updateChakraDisplay(player) {
     let chakra = getChakra(player);
-    player.onScreenDisplay.setActionBar(`Chakra: ${chakra}`);
+    player.onScreenDisplay.setActionBar(`§bChakra: ${chakra}`);
 }
 
 world.afterEvents.itemCompleteUse.subscribe(event => {
@@ -38,64 +38,38 @@ world.afterEvents.itemCompleteUse.subscribe(event => {
     }
 });
 
-// Subscribe to the beforeEvents.itemUse event (beta)
-// world.beforeEvents.itemUse.subscribe((eventData) => {
-//     const player = eventData.source;
-//     const item = eventData.item;
 
-//     // Check if the used item is "naruto:fireball_jutsu"
-//     if (item.id === "naruto:fireball_jutsu") {
-//         let currentChakra = getChakra(player);
-//         if (currentChakra < 50) {
-//             player.sendMessage("Not enough Chakra to use Fireball Jutsu!");
-//             eventData.cancel = true; // Cancel the use
-//         } else {
-//             setChakra(player, currentChakra - 50);
-//             player.sendMessage("Fireball Jutsu used! -50 Chakra");
-//         }
-//     }
-// });
 // Continuously update the Chakra UI every second
 system.runInterval(() => {
     for (const player of world.getPlayers()) {
         updateChakraDisplay(player);
     }
-}, 20);
+});
 
+// Cancel use if player doesn't have enough chakra
+world.beforeEvents.itemUse.subscribe(e => {
+    const player = e.source;
+    const item = e.itemStack;
 
-
-
-
-// system.beforeEvents.startup.subscribe(({ itemComponentRegistry }) => {
-//     itemComponentRegistry.registerCustomComponent("wiki:unbreakable", {
-//         onUse(){
-//             const item = evd.itemStack;
-//             const player = eventData.sourcel
-
-//         }
-//     });
-// });
-
-
-
-
-
-
-
-
-// Define the custom component
-const FireballJutsuComponent = {
-    onUse(eventData) {
-        const item = eventData.itemStack;
-        if (item.id === 'naruto:fireball_jutsu') {
-            eventData.cancel = true; // Cancel the item use action
-            // Optionally, send a message to the player
-            eventData.source.sendMessage('The Fireball Jutsu cannot be used.');
+    if (item.typeId === "naruto:fireball_jutsu") {
+        const chakra = getChakra(player);
+        if (chakra < 50) {
+            e.cancel = true;
+            player.sendMessage("Not enough Chakra! You need at least 50.");
         }
     }
-};
-
-// Register the custom component
-world.beforeEvents.worldInitialize.subscribe(({ itemComponentRegistry }) => {
-    itemComponentRegistry.registerCustomComponent("naruto:fireball_jutsu_component", FireballJutsuComponent);
 });
+
+// Subtract chakra right when the item is used
+world.afterEvents.itemUse.subscribe(e => {
+    const player = e.source;
+    const item = e.itemStack;
+
+    if (item.typeId === "naruto:fireball_jutsu") {
+        const currentChakra = getChakra(player);
+        setChakra(player, currentChakra - 50);
+        player.sendMessage("You used Fireball Jutsu! -50 Chakra");
+    }
+});
+
+
