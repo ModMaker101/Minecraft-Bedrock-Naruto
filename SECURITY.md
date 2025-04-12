@@ -6,8 +6,8 @@ We actively support the following versions of the Minecraft Bedrock Naruto mod. 
 
 | Version | Supported          | MC Version Supported |
 | ------- | ------------------ | -------------------- |
-| 1.2.5.1 | :heavy_check_mark: | 1.21.x               |
-| 1.2.5   | :heavy_check_mark: | 1.20.82              |
+| 1.4.0 | :heavy_check_mark: | 1.21.7x               |
+| 1.3.x   | :x: |              | 1.21.7x
 
 ## Warnings
 
