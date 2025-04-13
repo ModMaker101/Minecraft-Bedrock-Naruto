@@ -1,82 +1,67 @@
 {
-	"format_version": "1.20.51",
+	"format_version": "1.21.0",
 	"minecraft:entity": {
-		"description": {
-			"identifier": "naruto:kunai_projectile",
-			"is_spawnable": false,
-			"is_summonable": false,
-			"is_experimental": false,
-			"runtime_identifier": "minecraft:arrow"
+	  "description": {
+		"identifier": "naruto:kunai_projectile",
+		"is_spawnable": false,
+		"is_summonable": false,
+		"is_experimental": false,
+		"runtime_identifier": "minecraft:arrow"
+	  },
+	  "components": {
+		"minecraft:collision_box": {
+		  "width": 0.25,
+		  "height": 0.25
 		},
-		"component_groups": {},
-		"components": {
-			"minecraft:collision_box": {
-				"width": 0.25,
-				"height": 0.25
+  
+		"minecraft:projectile": {
+		  "on_hit": {
+			"impact_damage": {
+			  "damage": 4,
+			  "knockback": true,
+			  "semi_random_diff_damage": false,
+			  "destroy_on_hit": true
 			},
-			"minecraft:projectile": {
-				"on_hit": {
-					"impact_damage": {
-						"damage": 4,
-						"knockback": true,
-						"semi_random_diff_damage": false,
-						"destroy_on_hit": true
-					},
-					"stick_in_ground": {
-            "shake_time": 0
-          },
+			"stick_in_ground": {
+			  "shake_time": 0
+			},
 			"particle_on_hit": {
 			  "particle_type": "iconcrack",
 			  "num_particles": 3,
 			  "on_entity_hit": true,
 			  "on_other_hit": true
 			}
-				},
-				"liquid_inertia": 0.99,
-				"power": 4,
-				"gravity": 0.1,
-				"uncertainty_base": 1,
-				"uncertainty_multiplier": 0,
-				"stop_on_hurt": true,
-				"anchor": 1,
-				"should_bounce": true,
-				"multiple_targets": false,
-				"offset": [
-					0,
-					-0.1,
-					0
-				]
-			},
-			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
-			"minecraft:conditional_bandwidth_optimization": {
-				"default_values": {
-					"max_optimized_distance": 80,
-					"max_dropped_ticks": 10,
-					"use_motion_prediction_hints": true
-				}
-			},
-			"minecraft:scale": {
-				"value": 1.18
-			},
-			"minecraft:entity_sensor": {
-				"sensor_range": 1.2,
-				"minimum_count": 1,
-				"relative_range": false,
-				"event_filters": {
-					"all_of": [
-						{
-							"subject": "other",
-							"test": "is_family",
-							"value": "player"
-						}
-					]
-				}
-			}
+		  },
+		  "liquid_inertia": 0.99,
+		  "power": 4,
+		  "gravity": 0.1,
+		  "uncertainty_base": 1,
+		  "uncertainty_multiplier": 0,
+		  "stop_on_hurt": true,
+		  "anchor": 1,
+		  "should_bounce": true,
+		  "multiple_targets": false,
+		  "offset": [0, -0.1, 0]
 		},
-		"events": {}
+  
+		"minecraft:physics": {},
+		"minecraft:pushable": {
+		  "is_pushable": true,
+		  "is_pushable_by_piston": true
+		},
+  
+		"minecraft:conditional_bandwidth_optimization": {
+		  "default_values": {
+			"max_optimized_distance": 80,
+			"max_dropped_ticks": 10,
+			"use_motion_prediction_hints": true
+		  }
+		},
+  
+		"minecraft:scale": {
+		  "value": 1.18
+		}
+	  }
 	}
-}
+  }
+  

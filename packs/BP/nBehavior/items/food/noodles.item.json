@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.50",
+	"format_version": "1.21.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "naruto:noodles",
@@ -10,9 +10,7 @@
 		},
 		"components": {
 			"minecraft:max_stack_size": 64,
-			"minecraft:icon": {
-				"texture": "noodles"
-			},
+			"minecraft:icon": "noodles",
 			"minecraft:food": {
 				"nutrition": 3,
 				"saturation_modifier": 0.6

@@ -25,23 +25,4 @@ export function shadowCloneHandler() {
             }, 1200);
         }
     });
-
-
-    world.beforeEvents.itemUse.subscribe((event) => {
-        const { itemStack, source } = event;
-
-        if (itemStack.typeId === "naruto:shadow_clone_jutsu") {
-            const player = source;
-            const location = player.location;
-
-            system.run(() => {
-                const clone = player.dimension.spawnEntity("naruto:shadow_clone_entity", location);
-
-                const tameable = clone.getComponent("minecraft:tameable");
-                if (tameable) {
-                    tameable.tame(player);
-                }
-            });
-        }
-    });
 }
