@@ -1,14 +1,17 @@
 {
-  "format_version": "1.20.52",
+  "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "identifier": "naruto:fireball_jutsu",
-      "category": "equipment"
+      "identifier": "naruto:fireball_jutsu"
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "naruto:fireball_jutsu"
+      "minecraft:menu_category": {
+        "category": "equipment"
       },
+      "minecraft:display_name": {
+        "value": "item.naruto:fireball_jutsu"
+      },
+      "minecraft:icon": "naruto:fireball_jutsu",
       "minecraft:projectile": {
         "projectile_entity": "naruto:fireball_jutsu_projectile",
         "minimum_critical_power": 1
@@ -19,9 +22,6 @@
         "scale_power_by_draw_duration": false,
         "do_swing_animation": true
       }
-    },
-    "minecraft:display_name": {
-      "value": "item.naruto:fireball_jutsu"
     }
   }
 }

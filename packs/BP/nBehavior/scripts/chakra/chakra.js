@@ -43,30 +43,44 @@ export function chakraHandler() {
     });
 
     // Prevent use if not enough Chakra
-    world.beforeEvents.itemUse.subscribe(e => {
-        const player = e.source;
-        const item = e.itemStack;
+    world.beforeEvents.itemUse.subscribe(event => {
+        const player = event.source;
+        const item = event.itemStack;
 
         const chakraCost = jutsuChakraCosts[item.typeId];
         if (chakraCost !== undefined) {
             const chakra = getChakra(player);
             if (chakra < chakraCost) {
-                e.cancel = true;
+                event.cancel = true;
                 player.sendMessage(`Not enough Chakra! You need at least ${chakraCost}.`);
             }
         }
     });
 
-    // Deduct Chakra after use
-    world.afterEvents.itemUse.subscribe(e => {
-        const player = e.source;
-        const item = e.itemStack;
+    // Handle actual Jutsu effect after use
+    world.afterEvents.itemUse.subscribe(event => {
+        const player = event.source;
+        const item = event.itemStack;
 
         const chakraCost = jutsuChakraCosts[item.typeId];
         if (chakraCost !== undefined) {
             const currentChakra = getChakra(player);
             setChakra(player, currentChakra - chakraCost);
             player.sendMessage(`You used a Jutsu! -${chakraCost} Chakra`);
+
+            // Special logic for Shadow Clone Jutsu
+            if (item.typeId === "naruto:shadow_clone_jutsu") {
+                const location = player.location;
+
+                system.run(() => {
+                    const clone = player.dimension.spawnEntity("naruto:shadow_clone_entity", location);
+
+                    const tameable = clone.getComponent("minecraft:tameable");
+                    if (tameable) {
+                        tameable.tame(player);
+                    }
+                });
+            }
         }
     });
 }

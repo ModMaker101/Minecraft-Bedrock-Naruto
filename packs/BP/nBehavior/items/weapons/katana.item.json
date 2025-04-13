@@ -1,38 +1,41 @@
 {
-    "format_version": "1.20.52",
+    "format_version": "1.21.0",
     "minecraft:item": {
         "description": {
             "identifier": "naruto:katana",
             "menu_category": {
-                "category": "equipment",
-                "group": "itemGroup.name.sword"
-            }
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
         },
         "components": {
+            "minecraft:icon": "katana",
             "minecraft:max_stack_size": 1,
-            "minecraft:icon": {
-                "texture": "katana",
-                "minecraft:creative_category": {
-                    "parent": "itemGroup.name.sword"
-                }
+            "minecraft:menu_category": {
+                "category": "equipment",
+                "group": "minecraft:itemGroup.name.sword"
             },
-            "minecraft:damage": 6.5,
-            "minecraft:can_destroy_in_creative": false,
-            "minecraft:hand_equipped": true,
             "minecraft:durability": {
                 "max_durability": 251
+            },
+            "minecraft:damage": {
+                "value": 6
+            },
+            "minecraft:hand_equipped": true,
+            "minecraft:enchantable": {
+                "slot": "sword",
+                "value": 9
             },
             "minecraft:repairable": {
                 "repair_items": [
                     {
                         "items": [
-                            "iron_ingot"
+                            "minecraft:iron_ingot"
                         ],
                         "repair_amount": 62
                     }
                 ]
             }
-            
         }
     }
 }
