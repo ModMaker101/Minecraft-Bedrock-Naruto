@@ -1,5 +1,13 @@
 import { system, world, Player } from "@minecraft/server";
+
 export function chakraHandler() {
+    // Jutsu Chakra Costs
+    const jutsuChakraCosts = {
+        "naruto:fireball_jutsu": 50,
+        "naruto:shadow_clone_jutsu": 30,
+    };
+
+    // Function to set Chakra (clamped between 0 and 100)
     function setChakra(player, amount) {
         player.setDynamicProperty("chakra", Math.max(0, Math.min(100, amount)));
     }
@@ -9,12 +17,13 @@ export function chakraHandler() {
         return player.getDynamicProperty("chakra") ?? 100;
     }
 
-    // Function to update the Chakra display (runs every second)
+    // Function to update the Chakra display
     function updateChakraDisplay(player) {
         let chakra = getChakra(player);
         player.onScreenDisplay.setActionBar(`§bChakra: ${chakra}`);
     }
 
+    // When Ramen is used
     world.afterEvents.itemCompleteUse.subscribe(event => {
         const player = event.source;
         const item = event.itemStack;
@@ -26,37 +35,38 @@ export function chakraHandler() {
         }
     });
 
-    // Continuously update the Chakra UI every second
+    // Update Chakra UI every second
     system.runInterval(() => {
         for (const player of world.getPlayers()) {
             updateChakraDisplay(player);
         }
     });
 
-
-    // Cancel use if player doesn't have enough chakra
+    // Prevent use if not enough Chakra
     world.beforeEvents.itemUse.subscribe(e => {
         const player = e.source;
         const item = e.itemStack;
 
-        if (item.typeId === "naruto:fireball_jutsu") {
+        const chakraCost = jutsuChakraCosts[item.typeId];
+        if (chakraCost !== undefined) {
             const chakra = getChakra(player);
-            if (chakra < 50) {
+            if (chakra < chakraCost) {
                 e.cancel = true;
-                player.sendMessage("Not enough Chakra! You need at least 50.");
+                player.sendMessage(`Not enough Chakra! You need at least ${chakraCost}.`);
             }
         }
     });
 
-    // Subtract chakra right when the item is used
+    // Deduct Chakra after use
     world.afterEvents.itemUse.subscribe(e => {
         const player = e.source;
         const item = e.itemStack;
 
-        if (item.typeId === "naruto:fireball_jutsu") {
+        const chakraCost = jutsuChakraCosts[item.typeId];
+        if (chakraCost !== undefined) {
             const currentChakra = getChakra(player);
-            setChakra(player, currentChakra - 50);
-            player.sendMessage("You used Fireball Jutsu! -50 Chakra");
+            setChakra(player, currentChakra - chakraCost);
+            player.sendMessage(`You used a Jutsu! -${chakraCost} Chakra`);
         }
     });
 }

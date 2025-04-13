@@ -8,9 +8,12 @@ setupEmojiListCommand();
 setupHelpListCommand();
 setupHelpCommand();
 
-import { fireballHandler } from "./fireball_jutsu";
+import { fireballHandler } from "./jutsu/fireball_jutsu";
 fireballHandler();
 
-import { chakraHandler } from "./chakra/chakra";
+import { shadowCloneHandler } from "./jutsu/shadow_clone_jutsu";
+shadowCloneHandler();
 
+import { chakraHandler } from "./chakra/chakra";
 chakraHandler();
+
