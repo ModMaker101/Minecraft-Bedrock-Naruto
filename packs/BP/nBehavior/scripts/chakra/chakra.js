@@ -42,6 +42,14 @@ export function chakraHandler() {
         }
     });
 
+    function addChakraEverySecond() {
+        for (const player of world.getPlayers()) {
+            let currentChakra = getChakra(player);
+            setChakra(player, Math.min(currentChakra + 1));
+        }
+    }
+    system.runInterval(addChakraEverySecond, 20); // 20 ticks = 1 second
+
     // Prevent use if not enough Chakra
     world.beforeEvents.itemUse.subscribe(event => {
         const player = event.source;
