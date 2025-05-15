@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§cFireball Jutsu
-item.naruto:ramen.name=§eRamen
-pack.name=§l§2 Minecraft Bedrock §eNaruto §rRP
-pack.description=Tento mod přidává do hry anime Naruto, Naruto Shippuden a Boruto. Od této chvíle je tato sada ve vývoji. Doufáme, že do tohoto balíčku přidáme mnohem více. Od, ModMaker101 a kentcooper
-
-
-
-
+item.naruto:fireball_jutsu=§Cfireball jutsu
+item.naruto:ramen=§Eramen
+pack.name=§L§4 Minecraft Bedrock §inaruto §rrp
+pack.description=Tento mod do hry přidá anime Naruto, Naruto Shippuden a Boruto. Od této chvíle je tento balíček ve vývoji. Doufáme, že k tomuto balení přidáme mnohem více. Od, Modmaker101 a Kentcooper
+item.naruto:katana=Katana
+item.naruto:kunai=Kunai
+item.naruto:glass_bowl=Skleněná mísa
+item.naruto:noodles=§6NOODLES
+item.naruto:shadow_clone_jutsu=§Cshadow klon jutsu
+entity.naruto:shadow_clone_entity.name=Stínový klon

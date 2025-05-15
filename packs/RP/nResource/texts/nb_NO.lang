@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§cFireball Jutsu
-item.naruto:ramen.name=§eRamen
-pack.name=§l§2 Minecraft Berggrunn §eNaruto §rRP
-pack.description=Denne modden legger til anime Naruto, Naruto Shippuden og Boruto til spillet. For øyeblikket er denne pakken under utvikling. Vi håper å legge til mye mer til denne pakken. Fra, ModMaker101 og kentcooper
-
-
-
-
+item.naruto:fireball_jutsu=§Cfireball Jutsu
+item.naruto:ramen=§Eramen
+pack.name=§L§4 Minecraft berggrunn §Inaruto §rrp
+pack.description=Denne moden legger anime Naruto, Naruto Shippuden og Boruto til spillet. Fra dette øyeblikket er denne pakken i utvikling. Vi håper å legge mye mer til denne pakken. Fra, Modmaker101 og KentCooper
+item.naruto:katana=Katana
+item.naruto:kunai=Kunai
+item.naruto:glass_bowl=Glassskål
+item.naruto:noodles=§6noodles
+item.naruto:shadow_clone_jutsu=§Cshadow Clone Jutsu
+entity.naruto:shadow_clone_entity.name=Shadow Clone

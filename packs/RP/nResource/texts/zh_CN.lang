@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§c火球术
-item.naruto:ramen.name=§e拉面
-pack.name=§l§2 Minecraft 基岩 §e 火影忍者 §rRP
-pack.description=该模组将动漫《火影忍者》、《火影忍者疾风传》和《博人传》添加到游戏中。截至目前，该包正在开发中。我们希望为这个包添加更多内容。来自 ModMaker101 和 kentcooper
-
-
-
-
+item.naruto:fireball_jutsu=§CFIREBALLJUTSU
+item.naruto:ramen=§RAMEN
+pack.name=§l§4MinecraftBedrock§inaruto§RRP
+pack.description=这种模式将动漫火影忍者，火影忍者肖普登（Naruto Shippuden）和波鲁托（Boruto）增加了。截至这一刻，此包在开发中。我们希望在此包中添加更多。来自Modmaker101和Kentcooper
+item.naruto:katana=卡塔纳
+item.naruto:kunai=库奈
+item.naruto:glass_bowl=玻璃碗
+item.naruto:noodles=§6noodles
+item.naruto:shadow_clone_jutsu=§CSHADOW克隆Jutsu
+entity.naruto:shadow_clone_entity.name=阴影克隆

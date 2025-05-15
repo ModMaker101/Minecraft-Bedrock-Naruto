@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§cFireball Jutsu
-item.naruto:ramen.name=§eRamen
-pack.name=§l§2 Minecraft Bedrock §eNaruto §rRP
-pack.description=Ez a mod hozzáadja a Naruto, Naruto Shippuden és Boruto animéket a játékhoz. Jelenleg ez a csomag fejlesztés alatt áll. Reméljük, hogy még sok mindent hozzáadhatunk ehhez a csomaghoz. A ModMaker101-től és a kentcoopertől
-
-
-
-
+item.naruto:fireball_jutsu=§Cfireball jutsu
+item.naruto:ramen=§Eramen
+pack.name=§L §4 Minecraft alapkőzet §inaruto §rrp
+pack.description=Ez a mod hozzáadja az anime Naruto -t, Naruto Shippuden -t és Borutót a játékhoz. Ettől a pillanattól kezdve ez a csomag fejlesztés alatt áll. Reméljük, hogy még sok mindent hozzáadunk ehhez a csomaghoz. A Modmaker101 és a Kentcooper
+item.naruto:katana=Katana
+item.naruto:kunai=Kunai
+item.naruto:glass_bowl=Üveg tál
+item.naruto:noodles=§6noodles
+item.naruto:shadow_clone_jutsu=§Cshadow klón jutsu
+entity.naruto:shadow_clone_entity.name=Árnyékklón

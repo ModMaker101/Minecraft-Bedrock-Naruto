@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§cJutsu Bola de Fogo
-item.naruto:ramen.name=§eRamen
-pack.name=§l§2 Minecraft Bedrock §eNaruto §rRP
-pack.description=Este mod adiciona os animes Naruto, Naruto Shippuden e Boruto ao jogo. Neste momento este pacote está em desenvolvimento. Esperamos adicionar muito mais a este pacote. De, ModMaker101 e Kentcooper
-
-
-
-
+item.naruto:fireball_jutsu=§Cfireball jutsu
+item.naruto:ramen=§Eramen
+pack.name=§L§4 Minecraft Bedrock §inaruto §RRP
+pack.description=Este mod adiciona o Anime Naruto, Naruto Shippuden e Boruto ao jogo. A partir deste momento, este pacote está em desenvolvimento. Esperamos adicionar muito mais a este pacote. De Modmaker101 e Kentcooper
+item.naruto:katana=Katana
+item.naruto:kunai=Kunai
+item.naruto:glass_bowl=Tigela de vidro
+item.naruto:noodles=§6 Noodles
+item.naruto:shadow_clone_jutsu=§Cshadow clone jutsu
+entity.naruto:shadow_clone_entity.name=Clone das sombras

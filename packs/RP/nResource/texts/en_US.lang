@@ -6,3 +6,5 @@ item.naruto:katana=Katana
 item.naruto:kunai=Kunai
 item.naruto:glass_bowl=Glass Bowl
 item.naruto:noodles=§6Noodles
+item.naruto:shadow_clone_jutsu=§cShadow Clone Jutsu
+entity.naruto:shadow_clone_entity.name=Shadow Clone

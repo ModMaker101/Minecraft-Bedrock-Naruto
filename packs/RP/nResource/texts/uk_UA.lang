@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§cВогняна куля дзюцу
-item.naruto:ramen.name=§eRamen
-pack.name=§l§2 Minecraft Bedrock §eNaruto §rRP
-pack.description=Цей мод додає до гри аніме Наруто, Наруто Шипуден і Боруто. На даний момент цей пакет знаходиться в розробці. Ми сподіваємося додати багато іншого до цього набору. From, ModMaker101 і kentcooper
-
-
-
-
+item.naruto:fireball_jutsu=§Cfireball jutsu
+item.naruto:ramen=§Ерамен
+pack.name=§L§4 BedRock Minecraft §інаруто §rrp
+pack.description=Цей мод додає аніме Наруто, Наруто Шиппуден та Боруто до гри. Станом на цей момент цей пакет розробляється. Ми сподіваємось додати ще багато до цієї упаковки. З, Modmaker101 та Kentcoper
+item.naruto:katana=Катана
+item.naruto:kunai=Кунаї
+item.naruto:glass_bowl=Скляна миска
+item.naruto:noodles=§6нуделів
+item.naruto:shadow_clone_jutsu=§Cshadow клон jutsu
+entity.naruto:shadow_clone_entity.name=Тіньовий клон

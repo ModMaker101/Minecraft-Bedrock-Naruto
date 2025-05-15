@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§c Jutsu Fireball
-item.naruto:ramen.name=§eRamen
-pack.name=§l§2 Minecraft Bedrock §eNaruto §rRP
-pack.description=Αυτό το mod προσθέτει τα anime Naruto, Naruto Shippuden και Boruto στο παιχνίδι. Αυτή τη στιγμή αυτό το πακέτο βρίσκεται σε εξέλιξη. Ελπίζουμε να προσθέσουμε πολλά περισσότερα σε αυτό το πακέτο. Από, ModMaker101 και kentcooper
-
-
-
-
+item.naruto:fireball_jutsu=§Cfireball jutsu
+item.naruto:ramen=§Eramen
+pack.name=§L§4 Minecraft Bedrock §inaruto §rrp
+pack.description=Αυτό το mod προσθέτει το anime Naruto, το Naruto Shippuden και το Boruto στο παιχνίδι. Από αυτή τη στιγμή αυτό το πακέτο βρίσκεται σε εξέλιξη. Ελπίζουμε να προσθέσουμε πολλά περισσότερα σε αυτό το πακέτο. Από, Modmaker101 και Kentcooper
+item.naruto:katana=Κάτονα
+item.naruto:kunai=Είδος
+item.naruto:glass_bowl=Γυαλί
+item.naruto:noodles=§6noodles
+item.naruto:shadow_clone_jutsu=§Cshadow Clone Jutsu
+entity.naruto:shadow_clone_entity.name=Κλώνος σκιάς
