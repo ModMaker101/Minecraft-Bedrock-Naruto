@@ -60,7 +60,7 @@ export function chakraHandler() {
             const chakra = getChakra(player);
             if (chakra < chakraCost) {
                 event.cancel = true;
-                player.sendMessage(`Not enough Chakra! You need at least ${chakraCost}.`);
+                player.sendMessage(`§cNot enough Chakra! You need at least ${chakraCost}.`);
             }
         }
     });
