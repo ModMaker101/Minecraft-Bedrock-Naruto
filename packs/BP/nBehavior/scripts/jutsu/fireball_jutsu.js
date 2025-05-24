@@ -1,5 +1,4 @@
 import { world } from "@minecraft/server";
-
 export function fireballHandler() {
     world.afterEvents.itemUse.subscribe((event) => {
         const { itemStack, source: player } = event;

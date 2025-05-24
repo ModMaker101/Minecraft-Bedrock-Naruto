@@ -1,0 +1,34 @@
+{
+  "menu": {
+    "description": {
+      "identifier": "naruto:noodle_shop"
+    },
+    "controls": [
+      {
+        "control_type": "label",
+        "text": "Noodle Shop",
+        "size": [200, 40],
+        "position": [60, 20],
+        "color": "yellow"
+      },
+      {
+        "control_type": "label",
+        "text": "Buy delicious noodles!",
+        "size": [180, 20],
+        "position": [70, 70],
+        "color": "white"
+      },
+      {
+        "control_type": "button",
+        "text": "Close",
+        "size": [180, 40],
+        "position": [70, 110],
+        "button_name": "close"
+      }
+    ],
+    "background": {
+      "color": "#222222",
+      "opacity": 0.9
+    }
+  }
+}
