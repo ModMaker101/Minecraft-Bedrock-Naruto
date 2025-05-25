@@ -31,6 +31,9 @@
         },
         "shadow_clone_jutsu": {
             "textures": "textures/items/shadow_clone_jutsu.png"
-        }
+        },
+        "ichiraku_ramen_menu_item": {
+			"textures": "textures/items/ichiraku_ramen_menu_item.png"
+		}
     }
 }

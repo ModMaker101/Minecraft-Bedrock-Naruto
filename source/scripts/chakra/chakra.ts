@@ -1,5 +1,6 @@
 import { system, world, Player } from "@minecraft/server";
-
+import {getRyo} from "../ryoHandler";
+//
 export function chakraHandler() {
     // Jutsu Chakra Costs
     const jutsuChakraCosts: Record<string, number> = {
@@ -18,11 +19,12 @@ export function chakraHandler() {
         return typeof chakra === "number" ? chakra : 100;
     }
 
-    // Function to update the Chakra display
-    function updateChakraDisplay(player: Player): void {
-        let chakra = getChakra(player);
-        player.onScreenDisplay.setActionBar(`§bChakra: ${chakra}`);
-    }
+   function updateStatusDisplay(player: Player): void {
+    const chakra = getChakra(player);
+    const ryo = getRyo(player);
+    player.onScreenDisplay.setActionBar(`§bChakra: §f${chakra}   §6Ryo: §f${ryo}`);
+}
+
 
     // When Ramen is used
     world.afterEvents.itemCompleteUse.subscribe(event => {
@@ -39,7 +41,7 @@ export function chakraHandler() {
     // Update Chakra UI every second
     system.runInterval(() => {
         for (const player of world.getPlayers()) {
-            updateChakraDisplay(player);
+            updateStatusDisplay(player);
         }
     });
 
