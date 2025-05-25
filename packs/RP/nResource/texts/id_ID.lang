@@ -1,8 +1,10 @@
-item.naruto:fireball_jutsu.name=§cJutsu Bola Api
-item.naruto:ramen.name=§eRamen
-pack.name=§l§2 Batuan Dasar Minecraft §eNaruto §rRP
-pack.description=Mod ini menambahkan anime Naruto, Naruto Shippuden, dan Boruto ke dalam game. Saat ini paket ini sedang dalam pengembangan. Kami berharap dapat menambahkan lebih banyak lagi ke paket ini. Dari, ModMaker101 dan kentcooper
-
-
-
-
+item.naruto:fireball_jutsu=§Cfireball Jutsu
+item.naruto:ramen=§Eramen
+pack.name=§L§4 Bedrock Minecraft §inaruto §rrp
+pack.description=Mod ini menambahkan Anime Naruto, Naruto Shippuden, dan Boruto ke permainan. Sampai saat ini paket ini sedang dalam pengembangan. Kami berharap dapat menambahkan lebih banyak pada paket ini. Dari, modmaker101 dan kentcooper
+item.naruto:katana=Katana
+item.naruto:kunai=Kunai
+item.naruto:glass_bowl=Mangkuk kaca
+item.naruto:noodles=§6noodles
+item.naruto:shadow_clone_jutsu=§Cshadow klon jutsu
+entity.naruto:shadow_clone_entity.name=Klon Shadow
