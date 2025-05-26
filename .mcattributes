@@ -1,1 +1,2 @@
 diagnostic.disable.minecraft.animation.unused=true
+diagnostic.disable.behaviorpack.mcstructure.missing=true
