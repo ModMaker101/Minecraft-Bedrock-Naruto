@@ -1,4 +1,4 @@
-import { system, world, Player } from "@minecraft/server";
+import { system, world, Player, Entity } from "@minecraft/server";
 
 // === RYO FUNCTIONS ===
 export function getRyo(player: Player): number {
@@ -27,21 +27,16 @@ export function trySpendRyo(player: Player, cost: number): boolean {
 
 // === RYO SYSTEM INIT ===
 export function ryoHandler() {
-    // Give Ryo every second
-    system.runInterval(() => {
-        for (const player of world.getPlayers()) {
-            addRyo(player, 1);
-        }
-    }, 20); // 20 ticks = 1 second
+    // Give Ryo when a mob is killed by a player
+    world.afterEvents.entityDie.subscribe(event => {
+        const deadEntity = event.deadEntity;
+        const killer = event.damageSource.damagingEntity;
 
-    // Give Ryo when Ramen is eaten
-    world.afterEvents.itemCompleteUse.subscribe(event => {
-        const player = event.source;
-        const item = event.itemStack;
-
-        if (item.typeId === "naruto:ramen") {
-            addRyo(player, 10);
-            player.sendMessage("§aYou earned 10 Ryo from eating Ramen!");
+        if (killer instanceof Player) {
+            // You can adjust Ryo reward or even vary it by mob type
+            const reward = 5;
+            addRyo(killer, reward);
+            killer.sendMessage(`§aYou earned ${reward} Ryo for defeating a mob!`);
         }
     });
 }
