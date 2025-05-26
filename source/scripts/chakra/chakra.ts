@@ -22,7 +22,7 @@ export function chakraHandler() {
    function updateStatusDisplay(player: Player): void {
     const chakra = getChakra(player);
     const ryo = getRyo(player);
-    player.onScreenDisplay.setActionBar(`§bChakra: §f${chakra}   §6Ryo: §f${ryo}`);
+    player.onScreenDisplay.setActionBar(`§bChakra: §f${chakra} | §6Ryo: §f${ryo}`);
 }
 
 

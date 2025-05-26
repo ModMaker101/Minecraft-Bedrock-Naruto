@@ -19,7 +19,7 @@ export function chakraHandler() {
     function updateStatusDisplay(player) {
         const chakra = getChakra(player);
         const ryo = getRyo(player);
-        player.onScreenDisplay.setActionBar(`§bChakra: §f${chakra}   §6Ryo: §f${ryo}`);
+        player.onScreenDisplay.setActionBar(`§bChakra: §f${chakra} | §6Ryo: §f${ryo}`);
     }
     // When Ramen is used
     world.afterEvents.itemCompleteUse.subscribe(event => {
