@@ -2,7 +2,6 @@
 
 [![Latest Stable Release](https://badgen.net/github/release/modmaker101/minecraft-bedrock-naruto/stable)](https://github.com/ModMaker101/Minecraft-Bedrock-Naruto/releases)
 [![Open Issues](https://badgen.net/github/open-issues/modmaker101/minecraft-bedrock-naruto)](https://github.com/ModMaker101/Minecraft-Bedrock-Naruto/issues)
-[![License](https://badgen.net/badge/license/BSL/blue)](https://github.com/ModMaker101/Minecraft-Bedrock-Naruto/blob/main/LICENSE)
 [![Branches](https://badgen.net/github/branches/modmaker101/minecraft-bedrock-naruto)](https://github.com/ModMaker101/Minecraft-Bedrock-Naruto/branches)
 [![Merged PRs](https://badgen.net/github/merged-prs/modmaker101/minecraft-bedrock-naruto)](https://github.com/ModMaker101/Minecraft-Bedrock-Naruto/pulls)
 
